@@ -61,7 +61,7 @@
     <f:entry title="Tests to run" description="Enter tests to run in raw format, for example : v1:package1|className1|testName1;package2|className2|testName2">
       <f:textbox field="testsToRun" />
     </f:entry>
-            <f:validateButton title="Convert" progress="Evaluating..."
+            <f:validateButton title="Convert" progress="Evaluating..." checkMethod="post"
                     method="testConvert" with="teststorunconverter.framework,teststorunconverter.format,testsToRun"/>
     </f:advanced>
 
