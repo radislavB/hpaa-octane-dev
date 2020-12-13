@@ -50,6 +50,7 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.logging.log4j.Logger;
 import org.kohsuke.stapler.QueryParameter;
 import org.kohsuke.stapler.StaplerRequest;
+import org.kohsuke.stapler.verb.POST;
 
 import java.util.*;
 import java.util.concurrent.ExecutorService;
@@ -377,6 +378,7 @@ public class OctaneServerSettingsBuilder extends Builder {
             }
         }
 
+        @POST
         @SuppressWarnings("unused")
         public FormValidation doTestConnection(StaplerRequest req,
                                                @QueryParameter("uiLocation") String uiLocation,

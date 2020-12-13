@@ -93,7 +93,7 @@
 
                        </f:advanced>
 
-                        <f:validateButton title="${%global.config.test.connection}" progress="${%global.config.test.connection.progress}"
+                        <f:validateButton title="${%global.config.test.connection}" progress="${%global.config.test.connection.progress}" checkMethod="post"
                                               method="testConnection" with="uiLocation,username,password,impersonatedUser,suspend,workspace2ImpersonatedUserConf,parameters"/>
 
                     </table>
